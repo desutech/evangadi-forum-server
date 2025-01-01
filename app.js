@@ -9,7 +9,8 @@ const answerRoute = require ("./routes/answerRoute");
 const authMiddle = require('./middleware/authMiddleware');
 
 const app = express();
-const port = 5501;
+const port = process.env.PORT || 5501; 
+
 
 
 const cors = require ("cors")
