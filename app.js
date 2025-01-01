@@ -9,7 +9,7 @@ const answerRoute = require ("./routes/answerRoute");
 const authMiddle = require('./middleware/authMiddleware');
 
 const app = express();
-const port =10000; 
+const port =process.env.PORT || 4000; 
 
 
 
